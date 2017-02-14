@@ -1,0 +1,50 @@
+.app {
+    text-size-adjust: none;
+    font-family: helvetica, arial, sans-serif;
+    line-height: 200%;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.nav {
+  padding: 10px;
+  background: #F0F0F0;
+}
+
+.main {
+  flex: 1;
+  width: 100%;
+  background: #FEFEFE;
+  display: flex;
+}
+
+.footer {
+  background: #282827;
+  justify-content: flex-end;
+  height: 50px;
+}
+
+.leftBar {
+  align-self: flex-start;
+  display: flex;
+  padding: 20px;
+  background: #D2F3FF;
+  height: 100%;
+  flex-direction: column;
+}
+
+.rightBar {
+  align-self: flex-end;
+  display: flex;
+  height: 100%;
+  border-left: 1px solid black;
+  min-width: 100px;
+}
+
+.body {
+  display: flex;
+  justify-content: space-around;
+  flex: 1;
+}
+
