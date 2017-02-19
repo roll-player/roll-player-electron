@@ -17,7 +17,7 @@ function createWindow () {
 
   // and load the index.html of the app.
   mainWindow.loadURL(url.format({
-    pathname: 'localhost:8080',
+    pathname: 'dev.rollplayerapp.com',
     protocol: 'http:',
     slashes: true
   }))

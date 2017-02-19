@@ -1,13 +1,19 @@
 import React from 'react'
 import styles from './App.css'
 import mainStyle from './main.css'
+import Login from './login'
+
+import { authState } from '../store/auth'
+
 import { Router, Route, Link, hashHistory } from 'react-router'
 
-const Main = ({}) => (
-  <div className={mainStyle.welcome}>
-    Welcome to Roll Player
-  </div>
+
+const Main = () => (
+    <div className={mainStyle.welcome}>
+      Welcome to Roll Player
+    </div>
 )
+
 const Outer = () => (
     <Router history={hashHistory}>
       <Route path='/' component={App} >
@@ -26,7 +32,9 @@ const App = ({children}) => (
         <Link to={'/main'}>Main</Link>
       </div>
       <div className={styles.body}>
-        {children}
+        <Login>
+          {children}
+        </Login>
       </div>
       <div className={styles.rightBar}></div>
     </div>
