@@ -10,6 +10,14 @@ class Login extends React.Component {
     const { children } = this.props
 
     const state = authState.get()
+    if (!state.initialized) {
+      return (
+        <div>
+          Checking your login
+        </div>
+      )
+    }
+
     if (!state.profile) {
       return (
         <button onClick={() => login()}>Login</button>

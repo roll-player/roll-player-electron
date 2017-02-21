@@ -1,0 +1,31 @@
+$image-radius: 30px;
+
+.container {
+    display: flex;
+    flex-direction: row;
+    padding-right: 10px;
+}
+
+.image {
+    width: $image-radius;
+    height: $image-radius;
+    border-radius: 15px;
+    margin-right: 15px;
+}
+
+.nick {
+    font-size: 30px;
+    line-height: 30px;
+}
+
+.expanded {
+    display: flex;
+    position: relative;
+}
+
+.details {
+    position: absolute;
+    background: #F0F0F0;
+    top: 30px;
+    width: 100%;
+}

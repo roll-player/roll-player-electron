@@ -60,6 +60,15 @@ module.exports = {
           'postcss-loader',
         ],
       },
+      {
+        test: /\.scss$/,
+        use: [
+          'style-loader',
+          'css-loader?modules',
+          'sass-loader',
+          'postcss-loader',
+        ],
+      },
     ],
   },
 
