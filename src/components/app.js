@@ -3,6 +3,7 @@ import styles from './App.css'
 import mainStyle from './main.css'
 import Login from './login'
 import UserAccount from './useraccount'
+import Start from './start'
 
 import { authState } from '../store/auth'
 
@@ -12,6 +13,7 @@ import { Router, Route, Link, hashHistory } from 'react-router'
 const Main = () => (
     <div className={mainStyle.welcome}>
       Welcome to Roll Player
+      <Start />
     </div>
 )
 
